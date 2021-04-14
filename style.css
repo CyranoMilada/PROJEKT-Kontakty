@@ -22,8 +22,10 @@ h1 {
 
 .foto {
 	width: 150px;
+	height: 150px;
 	border-radius: 50%;
 	padding: 20px;
+	object-fit: cover;
 }
 
 .sekce {
@@ -79,15 +81,18 @@ h1 {
 	.blok {
 		text-align: center;
 		margin: 10px;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.foto {
 		margin: 0 auto;
-		flex: 1 1 15%;
 	}
 
 	.blok h2 {
 		margin-top: 0;
 	}
+
+	
 
 }

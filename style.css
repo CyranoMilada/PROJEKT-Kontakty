@@ -15,3 +15,44 @@ Mobil   0 - 539px
 Tablet  540px - 959px (čti jako 540px a víc)
 PC      960px a víc
 */
+
+h1 {
+	text-align: center;
+}
+
+.foto {
+	border-radius: 50%;
+	padding: 20px;
+}
+
+.sekce {
+	margin: 20px auto;
+	width: 60%;
+	text-align: center;
+	border: 2px solid gray;
+	border-radius: 5px;
+}
+
+.sekce h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.sekce p {
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 540px) {
+.kontejner {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sekce {
+	flex: 1 1 50%;
+}
+
+
+
+	
+}

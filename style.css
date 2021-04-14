@@ -21,13 +21,14 @@ h1 {
 }
 
 .foto {
+	width: 150px;
 	border-radius: 50%;
 	padding: 20px;
 }
 
 .sekce {
 	margin: 20px auto;
-	width: 60%;
+	width: 80%;
 	text-align: center;
 	border: 2px solid gray;
 	border-radius: 5px;
@@ -42,17 +43,51 @@ h1 {
 	margin-bottom: 20px;
 }
 
-@media screen and (min-width: 540px) {
-.kontejner {
-	display: flex;
-	flex-wrap: wrap;
+@media screen and (min-width: 750px) {
+	.kontejner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.sekce {
+		flex: 0 0 calc((100% - 80px) / 2);
+		display: flex;
+	}
+
+	.foto {
+		flex: 0 0 30%;
+	}
+
+	.blok {
+		text-align: left;
+		margin-right: 10px;
+	}
+
+	.blok h2 {
+		margin-top: 30px;
+	}	
 }
 
-.sekce {
-	flex: 1 1 50%;
-}
-
-
-
+@media screen and (min-width: 960px) {
+	.sekce {
+		flex: 1 1 calc((100% - 100px) / 4);
+		flex-direction: column;
+		margin: 10px;
+	}
 	
+	.blok {
+		text-align: center;
+		margin: 10px;
+	}
+
+	.foto {
+		margin: 0 auto;
+		flex: 1 1 20%;
+	}
+
+	.blok h2 {
+		margin-top: 0;
+	}
+
 }

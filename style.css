@@ -45,6 +45,10 @@ h1 {
 	margin-bottom: 20px;
 }
 
+.blok {
+	margin: 0 20px;
+}
+
 @media screen and (min-width: 750px) {
 	.kontejner {
 		display: flex;
